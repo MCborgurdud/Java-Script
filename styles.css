@@ -1,0 +1,29 @@
+/* Box Container */
+.box-container {
+  width: 60%;
+  height: 300px; /* Adjust as needed */
+  margin: 0 auto; /* Center the box horizontally */
+  overflow: hidden; /* Hides anything that overflows the box */
+  position: relative;
+  background-color: #e0e0e0; /* Light gray background for visibility */
+  border: 2px solid #333; /* Optional border for clarity */
+}
+
+/* Sprite inside the Box */
+.sprite {
+  width: 100px; /* Width of the sprite */
+  height: 100px; /* Height of the sprite */
+  background-color: red; /* Sprite color for visibility */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: moveSprite 3s linear infinite;
+}
+
+/* Animation for the sprite */
+@keyframes moveSprite {
+  0% { left: 50%; }
+  50% { left: 110%; } /* Moves out of the box */
+  100% { left: 50%; }
+}
